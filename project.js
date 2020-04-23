@@ -28,7 +28,6 @@ function mainRunner(){
 
     }
     //Remember here that hash is a string
-    alert(final_hash);
     playHash(final_hash); 
 }
 
@@ -46,8 +45,8 @@ function playHash(hash){
     var slider_value = document.getElementById("slider_value");
     var stop_button = document.getElementById("stop_button");
     var tempo = document.getElementById("tempo");
-    gainNode.gain.value = 0.06;
-    slider_value.textContent = "6";
+    gainNode.gain.value = 0.01;
+    slider_value.textContent = "1";
     var timeToPlay = tempo.value*0.01;
     var timeToAdd = tempo.value*0.01;
 
