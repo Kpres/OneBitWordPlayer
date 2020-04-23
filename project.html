@@ -5,13 +5,34 @@
     <head>
         <body>
             <div>
-                <label for="wordinput">Enter a word</label>
-                <input type="text" id="wordinput"></input>
-                <button onclick="mainRunner()">Play Music!</button>
-                <label for="myRange">Volume</label>
-                <input type = "range" min = "1" max = "100" value = "50" class = "slider" id ="myRange"></input>
-                <label for="myRange" id = "slider_value">50</label>
-                <button id = "stop_button">Stop Sample</button>
+                <div>
+                    <label for="wordinput">Enter a word</label>
+                    <input type="text" id="wordinput"></input>
+                    <button onclick="mainRunner()">Play Music!</button>
+                </div>
+                <br/>
+                <div>
+                    <label for="myRange">Volume</label>
+                    <input type = "range" min = "1" max = "100" value = "6" class = "slider" id ="myRange"></input>
+                    <label for="myRange" id = "slider_value">6</label>
+                </div>
+                <br/>
+                <div>
+                    <button id = "stop_button">Stop Sample</button>
+                </div>
+                <br/>
+                <div>
+                    <button id = "base_button" onclick="base_toggle()">Toggle Base</button>
+                    <label for="base_button" id = "base_enabled">Base Disabled</label>
+                </div>
+                <br/>
+                <div>
+                    <label for="tempo" id="tempo_name">Tempo</label>
+                    <input type = "range" min = "1" max = "100" value = "50" class = "slider" id ="tempo"></input>
+                    <label for="tempo" id="tempo_label">50</label>
+                    <br/>
+                    <label for="tempo" id="tempo_name">Note Higher Tempo Number Will Make It Slower</label>
+                </div>
             </div>
         </body>
     </head>
